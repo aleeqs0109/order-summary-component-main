@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="general.css">
 </head>
+
 <body>
 
-  Order Summary
+  <div class="flex-container">
+    <div class="pic_hero">
+      <img src="/images/illustration-hero.svg" alt="pic_hero">
+    </div>
+    
+    <div class="text-container">
+      <h1>
+        Order Summary
+      </h1>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <p>You can now listen to millions of songs,<br>
+        audiobooks, and podcasts on any device <br>
+        anywhere you like!
+      </p>
+        
+      <div class="checkout">
+        <div class="checkout_left">
+            <img src="/images/icon-music.svg " alt="music_icon">
+            <p><span>Annual Plan </span><br>
+            $59.99/year</p> 
+        </div>
+       
+        <div class="checkout_right">
+          <a href="">Change</a>
+        </div>
+      </div>
+        
+      <div class="payment_and_cancel">
+        <button class="proceed_payment" type="submit">
+         <a href=""> Proceed to Payment</a>
+        </button>
 
-  Annual Plan
-  $59.99/year
+        <button class="cancel_order" type="submit">
+         <a href="">Cancel Order</a> 
+        </button>  
+      </div>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/aleeqs0109">aleeqs0109</a>.
+      </div>
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+</div>
 </html>
+
+

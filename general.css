@@ -1,0 +1,160 @@
+:root {
+    /* ### Primary */
+
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+
+@font-face{
+    font-family: "RedHatDisplay";
+    src: url(/font/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf) format(truetype);
+    font-style: normal;
+}
+
+body {
+    font-family: "RedHatDisplay", "sans-serif";
+    font-size: 16px;
+    background-image: url(/images/pattern-background-desktop.svg);/* Damit wird ein Bild als Background eingebunden*/
+    background-repeat: repeat-x; /*Damit wird der Background nicht immer wiederholt sondern skaliert sich*/
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+.flex-container {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 450px; /*Div wird an die Breite des Inhalts automatisch angepasst*/
+    display: flex;  
+    flex-direction: column;
+    margin-top: 80px;
+    border-radius: 24px;
+}
+
+
+img {
+    border-radius: 24px 24px 0px 0px;
+}
+
+h1 {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+p {
+    color: var(--Desaturatedblue);
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Verypaleblue);
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.checkout_left {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 20px;
+align-items: center;
+margin-left: 25px;
+font-size: 16px;
+}
+
+.checkout_left img {
+    width: 55px;
+    height: 55px;
+}
+
+.checkout_left span {
+    font-weight: bolder ;
+   color: var(--Darkblue);
+}
+
+.checkout_right a {
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+.checkout_right a:hover {
+    color: var(--Brightblue);
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.checkout_right a:visited {
+    color: var(--Brightblue);
+}
+
+.payment_and_cancel {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.payment_and_cancel a{
+   text-decoration: none;
+    
+}
+
+.payment_and_cancel button {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+}
+
+.proceed_payment {
+    background-color: var(--Brightblue);
+    color: var(--Verypaleblue);
+    box-shadow: 15px 15px 15px var(--Paleblue);
+    transition: 1s ease;
+}
+
+.cancel_order {
+    background: none;
+    margin-bottom: 20px;
+    color: var(--Desaturatedblue);
+}
+
+.proceed_payment a:visited {
+    background-color: var(--Brightblue);
+    color: var(--Verypaleblue);
+    box-shadow: 15px 15px 15px var(--Paleblue);
+}
+
+.cancel_order a:visited{
+    background: none;
+    margin-bottom: 20px;
+    color: var(--Desaturatedblue);
+}
+
+button:hover {
+     -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
